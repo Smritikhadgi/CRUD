@@ -8,7 +8,7 @@ root.title("FACEBOOK")
 root.iconbitmap("fb.ico")
 root.geometry("320x600")
 root.configure(bg="royalblue2")
-root.resizable(0,1)
+root.resizable(0,0)
 
 my_image=Image.open("fb1.png")
 resized_image=my_image.resize((80,60))
@@ -53,7 +53,7 @@ def submit():
     messagebox.showinfo("USER","Inserted Sucessfully")
     conn.commit()
     conn.close()
-    
+
     fname.delete(0,END)
     lname.delete(0,END)
     address.delete(0,END)
